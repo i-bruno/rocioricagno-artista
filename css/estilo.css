@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 5px;
+  padding: 5px; }
+
+p {
+  margin: 5px;
+  padding: 5px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 5px;
+  padding: 5px; }
+
+ol {
+  list-style: none; }
+
+.gridPrincipal {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0,1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-auto-flow: row;
+  grid-template-areas: "cabecera" "menu" "contenido" "pie"; }
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  grid-area: cabecera;
+  border-radius: 5px;
+  padding: 5px; }
+  .cabecera .idiomas .imgIdioma {
+    height: auto;
+    width: 25px; }
+
+.menu {
+  grid-area: menu;
+  border-radius: 5px;
+  padding: 5px; }
+
+.contenido {
+  grid-area: contenido;
+  border-radius: 5px;
+  padding: 5px; }
+
+.pie {
+  grid-area: pie;
+  border-radius: 5px;
+  padding: 5px; }
+  .pie .redes .imgRedes {
+    height: auto;
+    width: 25px; }
+
+@media only screen and (min-width: 992px) {
+  .gridPrincipal {
+    grid-template-columns: 1fr 4fr 4fr;
+    grid-template-rows: 0,1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas: "cabecera cabecera cabecera" "menu contenido contenido" "pie pie pie"; }
+  .cabecera {
+    display: flex;
+    justify-content: space-between;
+    grid-area: cabecera;
+    border-radius: 5px;
+    padding: 5px; }
+    .cabecera .idiomas .imgIdioma {
+      height: auto;
+      width: 25px; }
+  .menu {
+    grid-area: menu;
+    border-radius: 5px;
+    padding: 5px; }
+  .contenido {
+    grid-area: contenido;
+    border-radius: 5px;
+    padding: 5px; }
+  .pie {
+    grid-area: pie;
+    border-radius: 5px;
+    padding: 5px; }
+    .pie .redes .imgRedes {
+      height: auto;
+      width: 25px; } }
+
+.slide {
+  width: 80%;
+  height: auto; }
